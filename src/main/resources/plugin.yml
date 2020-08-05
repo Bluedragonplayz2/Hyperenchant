@@ -1,0 +1,9 @@
+name: Hyperenchant
+version: ${project.version}
+main: me.bluedragonplayz2.hyperenchant.Hyperenchant
+api-version: 1.13
+authors: [bluedragonplayz2]
+description: Hyperenchanting plugin
+commands:
+  hyperenchant:
+    description: opens a gui

@@ -34,8 +34,6 @@ public class Gui implements CommandExecutor {
                 test_sword_meta.setLore(test_sword_lore);
                 test_sword.setItemMeta(test_sword_meta);
 
-
-
                 ItemStack[] menu_items = {test_sword};
 
                 event.setContents(menu_items);

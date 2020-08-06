@@ -1,6 +1,7 @@
 package me.bluedragonplayz2.hyperenchant;
 
 import me.bluedragonplayz2.hyperenchant.command.Gui;
+import me.bluedragonplayz2.hyperenchant.event.eventitemclick;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -16,6 +17,8 @@ public final class Hyperenchant extends JavaPlugin {
         System.out.println("Hyperenchant is starting! Welcome!");
 
         this.getCommand("Hyperenchant").setExecutor(new Gui());
+
+        getServer().getPluginManager().registerEvents(new eventitemclick(),this);
 
 
     }

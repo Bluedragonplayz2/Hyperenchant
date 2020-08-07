@@ -16,17 +16,14 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Gui implements CommandExecutor{
+public class Argsplitter implements CommandExecutor{
 
     private Hyperenchant main;
     private Free Free;
-
-    public Gui(Hyperenchant main) {
+    public Argsplitter(Hyperenchant main) {
         this.main = main;
         this.Free = new Free(this.main);
-
     }
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player){
@@ -40,12 +37,6 @@ public class Gui implements CommandExecutor{
 
 
                 }
-
-
-
-
-
-
 
             }else{
                 p.sendMessage("Please use a args");

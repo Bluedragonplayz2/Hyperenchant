@@ -24,7 +24,6 @@ public class Free implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player) sender;
         Inventory event = Bukkit.createInventory(p, 27, ChatColor.DARK_GREEN + "Free Sword");
-
         ItemStack test_sword = new ItemStack(Material.DIAMOND_SWORD);
         ItemMeta test_sword_meta = test_sword.getItemMeta();
         test_sword_meta.setDisplayName(ChatColor.MAGIC + "test sword one");
@@ -33,13 +32,9 @@ public class Free implements CommandExecutor {
         test_sword_lore.add(ChatColor.DARK_PURPLE + "testing sword");
         test_sword_meta.setLore(test_sword_lore);
         test_sword.setItemMeta(test_sword_meta);
-
         ItemStack[] menu_items = {test_sword};
-
         event.setContents(menu_items);
-
         p.openInventory(event);
-
         return true;
     }
 }

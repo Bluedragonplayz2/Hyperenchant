@@ -12,7 +12,7 @@ public class Customconfigs {
     private static FileConfiguration customfile;
     //Find ot generate a custom data file
     public static void setup(){
-        file = new File(Bukkit.getServer().getPluginManager().getPlugin("Hyperenchant").getDataFolder(), "HyperData.yml");
+        file = new File(Bukkit.getServer().getPluginManager().getPlugin("hyperenchant").getDataFolder(), "hyperData.yml");
         if(!file.exists()){
             try{
                 file.createNewFile();
